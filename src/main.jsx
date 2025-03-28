@@ -1,10 +1,29 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.jsx'
+/**
+ * @copyright 2025 codewithamu
+ * @license Apache-2.0
+ */
 
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-)
+import React from "react";
+import { createRoot } from "react-dom/client";
+
+/**
+ * Components
+ */
+import App from "./App.jsx";
+
+/**
+ * Css Link
+ */
+import './index.css'
+
+const rootElement = document.getElementById("root");
+
+if (rootElement) {
+  createRoot(rootElement).render( 
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  );
+} else {
+  console.error("Không tìm thấy phần tử #root trong DOM!");
+}
