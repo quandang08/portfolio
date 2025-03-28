@@ -4,9 +4,17 @@
  */
 import Header from "./components/Header";
 import React from "react";
+import Hero from "./components/Hero";
+
 
 const App = () => {
-  return <Header/>;
-}
-
+  return (
+    <>
+      <Header />
+      <main >
+        <Hero />
+      </main>
+    </>
+  );
+};
 export default App;
