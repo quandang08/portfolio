@@ -15,6 +15,7 @@ import App from "./App.jsx";
  * Css Link
  */
 import './index.css'
+import 'lenis/dist/lenis.css'
 
 const rootElement = document.getElementById("root");
 
