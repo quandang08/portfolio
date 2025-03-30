@@ -48,7 +48,7 @@ const Contact = () => {
                         Contact me for collaboration
                     </h2>
                     <p className="text-zinc-400 mt-3 mb-8 max-w-[50ch] lg:max-w-[30ch]">
-                        Reach out today to discuss your project needs and start 
+                        Reach out today to discuss your project needs and start
                         collaborating on something amazing!
                     </p>
                     <div className="flex items-center gap-2 mt-auto">
@@ -75,69 +75,57 @@ const Contact = () => {
                 >
                     <div className="md:grid md:items-center md:grid-cols-2 md:gap-2">
                         <div className="mb-4">
-                            <label
-                                htmlFor='name'
-                                className='label'
-                            >
+                            <label htmlFor="name" className="label">
                                 Name
                             </label>
                             <input
-                                type='text'
-                                name='name'
-                                id='name'
-                                autoComplete='name'
+                                type="text"
+                                name="name"
+                                id="name"
+                                autoComplete="name"
                                 required
-                                placeholder='Quan Dang'
-                                className='text-field'
-                            />
-                        </div>
-
-                        <div className="mb-4 ">
-                            <label
-                                htmlFor='email'
-                                className='label'
-                            >
-                                Email
-                            </label>
-                            <input
-                                type='email'
-                                name='email'
-                                id='email'
-                                autoComplete='email'
-                                required
-                                placeholder='amu@example.com'
-                                className='text-field'
+                                placeholder="Quan Dang"
+                                className="text-field"
                             />
                         </div>
 
                         <div className="mb-4">
-                            <label
-                                htmlFor="message"
-                                className='label'
-                            >
+                            <label htmlFor="email" className="label">
+                                Email
+                            </label>
+                            <input
+                                type="email"
+                                name="email"
+                                id="email"
+                                autoComplete="email"
+                                required
+                                placeholder="amu@example.com"
+                                className="text-field"
+                            />
+                        </div>
+
+                        <div className="mb-4 md:col-span-2">
+                            <label htmlFor="message" className="label">
                                 Message
                             </label>
-
                             <textarea
                                 name="message"
                                 id="message"
-                                placeholder='Hi!'
+                                placeholder="Hi!"
                                 required
-                                className='text-field resize-y min-h-32 max-h-80'
-                            >
-
-                            </textarea>
+                                className="text-field resize-y min-h-32 max-h-80"
+                            />
                         </div>
 
-                        <button 
-                            type="submit"
-                            className='btn btn-primary [&]:max-w-full
-                            w-full justify-center'
-                        >
-                            Submit
-                        </button>
+                        <div className="md:col-span-2">
+                            <button
+                                type="submit"
+                                className="btn btn-primary w-full py-4 px-8 text-2xl font-semibold rounded-lg"
+                            >
+                                Submit
+                            </button>
+                        </div>
                     </div>
-
                 </form>
 
             </div>

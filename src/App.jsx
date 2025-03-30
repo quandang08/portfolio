@@ -10,19 +10,21 @@ import Skill from "./components/Skill";
 import Work from "./components/Work";
 import Review from "./components/Review";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
     <>
       <Header />
-      <main >
+      <main>
         <Hero />
         <About />
         <Skill />
-        <Work/>
-        <Review/>
-        <Contact/>
+        <Work />
+        <Review />
+        <Contact />
       </main>
+      <Footer />
     </>
   );
 };
