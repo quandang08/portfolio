@@ -12,41 +12,122 @@ const skillItem = [
         desc: 'Design tool'
     },
     {
+        imgSrc: '/images/intellij.svg',
+        label: 'IntelliJ IDEA',
+        desc: 'IDE'
+    },
+    {
+        imgSrc: '/images/git.svg',
+        label: 'Git',
+        desc: 'Version control'
+    },
+    {
+        imgSrc: '/images/github.svg',
+        label: 'GitHub',
+        desc: 'Code hosting'
+    },
+    {
+        imgSrc: '/images/postman.svg',
+        label: 'Postman',
+        desc: 'API testing'
+    },   
+    {
+        imgSrc: '/images/java.svg',
+        label: 'Java',
+        desc: 'Programming language'
+    },
+    {
+        imgSrc: '/images/kotlin.svg',
+        label: 'Kotlin',
+        desc: 'Programming language'
+    },
+    {
+        imgSrc: '/images/spring.svg',
+        label: 'Spring Boot',
+        desc: 'Java framework'
+    },
+    {
         imgSrc: '/images/css3.svg',
-        label: 'CSS',
-        desc: 'User Interface'
+        label: 'CSS3',
+        desc: 'Styling'
     },
     {
         imgSrc: '/images/javascript.svg',
         label: 'JavaScript',
-        desc: 'Interaction'
+        desc: 'Scripting language'
     },
     {
-        imgSrc: '/images/nodejs.svg',
-        label: 'NodeJS',
-        desc: 'Web Server'
-    },
-    {
-        imgSrc: '/images/expressjs.svg',
-        label: 'ExpressJS',
-        desc: 'Node Framework'
-    },
-    {
-        imgSrc: '/images/mongodb.svg',
-        label: 'MongoDB',
-        desc: 'Database'
+        imgSrc: '/images/bootstrap.svg',
+        label: 'Bootstrap 5',
+        desc: 'CSS framework'
     },
     {
         imgSrc: '/images/react.svg',
         label: 'React',
-        desc: 'Framework'
+        desc: 'Frontend library'
     },
     {
         imgSrc: '/images/tailwindcss.svg',
         label: 'TailwindCSS',
-        desc: 'User Interface'
+        desc: 'Utility-first CSS'
+    },
+    {
+        imgSrc: '/images/mysql.svg',
+        label: 'MySQL',
+        desc: 'Database'
+    },
+    {
+        imgSrc: '/images/postgresql.svg',
+        label: 'PostgreSQL',
+        desc: 'Database'
+    },
+    {
+        imgSrc: '/images/mongodb.svg',
+        label: 'MongoDB',
+        desc: 'NoSQL database'
+    },
+    {
+        imgSrc: '/images/redux.svg',
+        label: 'Redux',
+        desc: 'State management'
+    },
+    {
+        imgSrc: '/images/axios.svg',
+        label: 'Axios',
+        desc: 'HTTP client'
+    },
+    {
+        imgSrc: '/images/docker.svg',
+        label: 'Docker',
+        desc: 'Containerization'
+    },
+    {
+        imgSrc: '/images/apachekafka.svg',
+        label: 'Kafka',
+        desc: 'Event streaming'
+    },
+    {
+        imgSrc: '/images/kubernetes.svg',
+        label: 'Kubernetes',
+        desc: 'Container orchestration'
+    },
+    {
+        imgSrc: '/images/rabbitmq.svg',
+        label: 'RabbitMQ',
+        desc: 'Message broker'
+    },
+    {
+        imgSrc: '/images/socketio.svg',
+        label: 'Socket.IO',
+        desc: 'Realtime communication'
+    },
+    {
+        imgSrc: '/images/wordpress.svg',
+        label: 'WordPress',
+        desc: 'CMS platform'
     },
 ];
+
 const Skill = () => {
     return (
         <section className='section'>
