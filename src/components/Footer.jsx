@@ -3,7 +3,6 @@
  * @license Apache-2.0
  */
 
-import React from 'react'
 import { ButtonPrimary } from './Button';
 
 const sitemap = [
@@ -32,23 +31,15 @@ const sitemap = [
 const socials = [
     {
         label: 'GitHub',
-        href: 'https://www.github.com/codewithsadee-org'
+        href: 'https://github.com/quandang08'
     },
     {
         label: 'LinkedIn',
-        href: 'https://www.linkedin.com/in/codewithsadee'
-    },
-    {
-        label: 'Twitter X',
-        href: 'https://x.com/codewithsadee_'
+        href: 'https://www.linkedin.com/in/quandang08'
     },
     {
         label: 'Instagram',
-        href: 'https://www.instagram.com/codewithsadee'
-    },
-    {
-        label: 'CodePen',
-        href: 'https://codepen.io/codewithsadee'
+        href: 'https://www.instagram.com/quanhs0971/'
     }
 ];
 
