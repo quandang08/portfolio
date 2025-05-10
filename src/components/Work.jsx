@@ -6,8 +6,8 @@
 import ProjectCard from './ProjectCard'
 
 const works = [
-  { imgSrc: '/images/project-1.png', title: 'Full stack music app', tags: ['JAVA', 'SPRING BOOT','MULTI-LAYERED'], projectLink: 'https://github.com/quandang08/social-media-front-end.git' },
-  { imgSrc: '/images/project-2.png', title: 'Free stock photo app', tags: ['JAVA', 'SPRING BOOT','MICROSERVICE'], projectLink: 'https://github.com/quandang08/task-management-FrontEnd.git' },
+  { imgSrc: '/images/project-1.png', title: 'Social Media System', tags: ['JAVA', 'SPRING BOOT','MULTI-LAYERED'], projectLink: 'https://github.com/quandang08/social-media-front-end.git' },
+  { imgSrc: '/images/project-2.png', title: 'Task Management System', tags: ['JAVA', 'SPRING BOOT','MICROSERVICE'], projectLink: 'https://github.com/quandang08/task-management-FrontEnd.git' },
   { imgSrc: '/images/project-3.png', title: 'E-commerce System', tags: ['JAVA','SPRING BOOT', 'MICROSERVICE'], projectLink: 'https://github.com/quandang08/E-Commerence-Java-Spring.git' },
 
 ]
