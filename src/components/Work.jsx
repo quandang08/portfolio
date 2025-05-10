@@ -3,75 +3,40 @@
  * @license Apache-2.0
  */
 
-import React from 'react'
-import ProjectCard from './ProjectCard';
+import ProjectCard from './ProjectCard'
 
 const works = [
-    {
-      imgSrc: '/images/project-1.jpg',
-      title: 'Full stack music app',
-      tags: ['API', 'MVC', 'Development'],
-      projectLink: 'https://musify-5al0.onrender.com/'
-    },
-    {
-      imgSrc: '/images/project-2.jpg',
-      title: 'Free stock photo app',
-      tags: ['API', 'SPA'],
-      projectLink: 'https://pixstock-official.vercel.app/'
-    },
-    {
-      imgSrc: '/images/project-3.jpg',
-      title: 'Recipe app',
-      tags: ['Development', 'API'],
-      projectLink: ''
-    },
-    {
-      imgSrc: '/images/project-4.jpg',
-      title: 'Real state website',
-      tags: ['Web-design', 'Development'],
-      projectLink: 'https://github.com/codewithsadee-org/wealthome'
-    },
-    {
-      imgSrc: '/images/project-5.jpg',
-      title: 'eCommerce website',
-      tags: ['eCommerce', 'Development'],
-      projectLink: 'https://github.com/codewithsadee/anon-ecommerce-website'
-    },
-    {
-      imgSrc: '/images/project-6.jpg',
-      title: 'vCard Personal portfolio',
-      tags: ['Web-design', 'Development'],
-      projectLink: 'https://github.com/codewithsadee/vcard-personal-portfolio'
-    },
-  ];
+  { imgSrc: '/images/project-1.png', title: 'Full stack music app', tags: ['JAVA', 'SPRING BOOT','MULTI-LAYERED'], projectLink: 'https://github.com/quandang08/social-media-front-end.git' },
+  { imgSrc: '/images/project-2.png', title: 'Free stock photo app', tags: ['JAVA', 'SPRING BOOT','MICROSERVICE'], projectLink: 'https://github.com/quandang08/task-management-FrontEnd.git' },
+  { imgSrc: '/images/project-3.png', title: 'E-commerce System', tags: ['JAVA','SPRING BOOT', 'MICROSERVICE'], projectLink: 'https://github.com/quandang08/E-Commerence-Java-Spring.git' },
 
-const Work = () => {
-  return (
-    <section
-        id='work'
-        className='section'
-    >
-        <div className="container">
-            <h2 className='headline-2 mb-8 reveal-up'>
-                My Portfolio highlights
-            </h2>
+]
 
-            <div className="grid gap-x-4 gap-y-5 grid-cols-[repeat(auto-fill,_minmax(280px,_1fr))]">
-                {works.map(({imgSrc, title, tags, projectLink }, key) => (
-                    <ProjectCard 
-                     key = {key}
-                     imgSrc = {imgSrc}
-                     title = {title}
-                     tags = {tags}
-                     projectLink={projectLink}
-                     classes="reveal-up"
-                    />
-                )
-            )}
-            </div>
+const Work = () => (
+  <section id="work" className="py-20 bg-zinc-50">
+    <div className="container mx-auto px-4 lg:px-8">
+      <h2 className="text-4xl md:text-5xl font-extrabold text-center mb-12">
+        <span className="bg-gradient-to-r from-sky-400 to-indigo-400 bg-clip-text text-transparent text-shadow-md">
+          My Portfolio Highlights
+        </span>
+      </h2>
+
+      <div className="bg-white p-8 rounded-2xl shadow-lg">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+          {works.map(({ imgSrc, title, tags, projectLink }, i) => (
+            <ProjectCard
+              key={i}
+              imgSrc={imgSrc}
+              title={title}
+              tags={tags}
+              projectLink={projectLink}
+              classes="transform transition hover:-translate-y-1 hover:shadow-lg"
+            />
+          ))}
         </div>
-    </section>
-  )
-}
+      </div>
+    </div>
+  </section>
+)
 
 export default Work

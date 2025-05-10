@@ -71,26 +71,38 @@ const Review = () => {
 
   return (
     <section
-    id='reviews'
-    className='section overflow-hidden'
+      id='reviews'
+      className='section overflow-hidden'
+      style={{
+        background: 'radial-gradient(at 100% 0%, rgba(17, 94, 181, 0.1) 0%, transparent 50%)',
+        backgroundColor: 'rgb(12, 12, 12)'
+      }}
     >
-        <div className="container">
-            <h2 className="headline-2 mb-8 reveal-up">
-                What our customers say
-            </h2>
+      <div className="container">
+        <h2 className="headline-2 mb-8 reveal-up" style={{ color: '#e0f2fe' }}>
+          What our customers say
+        </h2>
 
-            <div className="scrub-slide flex items-stretch gap-3 w-fit">
-                {reviews.map(({content, name, imgSrc, company }, key) => (
-                    <ReviewCard
-                    key={key}
-                    name={name}
-                    imgSrc={imgSrc}
-                    company={company}
-                    content={content}
-                    />
-                ))}
-            </div>
+        <div className="scrub-slide flex items-stretch gap-3 w-fit">
+          {reviews.map(({content, name, imgSrc, company }, key) => (
+            <ReviewCard
+              key={key}
+              name={name}
+              imgSrc={imgSrc}
+              company={company}
+              content={content}
+              style={{
+                background: 'rgba(0, 0, 0, 0.4)',
+                backdropFilter: 'blur(10px)',
+                border: '1px solid rgba(255, 255, 255, 0.1)',
+                boxShadow: '0 8px 32px 0 rgba(31, 38, 135, 0.15)',
+                borderRadius: '16px',
+                transition: 'all 0.3s ease'
+              }}
+            />
+          ))}
         </div>
+      </div>
     </section>
   )
 }

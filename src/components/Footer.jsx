@@ -56,7 +56,7 @@ const Footer = () => {
                         </h2>
 
                         <ButtonPrimary
-                            href="mailto:codewithamu@gmail.com"
+                            href="mailto:quanhs0971@gmail.com"
                             label="Get in touch"
                             icon="chevron_right"
                             classes="reveal-up"
