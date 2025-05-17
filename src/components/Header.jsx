@@ -18,7 +18,7 @@ const Header = () => {
         {/* Logo */}
         <a href="/" className="logo">
           <img
-            src="/images/logo_self.png"
+            src="/images/logo.png"
             width={40}
             height={40}
             alt="Amu"
