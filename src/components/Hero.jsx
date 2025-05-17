@@ -22,7 +22,7 @@ const Hero = () => {
         {/* Action Buttons */}
         <div className="flex justify-center gap-4 flex-col sm:flex-row">
           {/* Download CV Button */}
-          <a href="/dang_quan.pdf" download="dang_quan.pdf">
+          <a href="/DangAnhQuan_CV.pdf" download="DangAnhQuan_CV.pdf">
             <ButtonPrimary label="Download CV" icon="download" />
           </a>
           <ButtonOutline
